@@ -1,0 +1,50 @@
+{
+    "name": "gatsby-transformer-media-refs",
+    "description": "Use Jamify Cloud images in Gatsby projects.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "styxlab",
+    "homepage": "https://github.com/styxlab/",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/styxlab/gatsby-theme-try-ghost/tree/master/packages/gatsby-transformer-media-refs"
+    },
+    "bugs": {
+        "url": "https://github.com/styxlab/gatsby-theme-try-ghost/issues"
+    },
+    "keywords": [
+        "gatsby",
+        "gatsby-plugin",
+        "gatsby-image",
+        "remote",
+        "download",
+        "jamify",
+        "ghost",
+        "ghost-cms"
+    ],
+    "scripts": {
+        "build": "babel src --out-dir . --ignore \"**/__tests__\" && babel src --out-dir . --ignore \"**/__tests__\" --ignore \"**/__mocks__\" --extensions \".ts\"",
+        "prepare": "cross-env NODE_ENV=production npm run build",
+        "typegen": "tsc --emitDeclarationOnly --declaration --declarationDir dist/",
+        "watch": "babel -w src --out-dir . --ignore **/__tests__"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.10.5",
+        "@babel/core": "7.11.0",
+        "@types/ci-info": "2.0.0",
+        "babel-preset-gatsby-package": "0.5.2",
+        "cross-env": "7.0.2",
+        "typescript": "^3.9.5"
+    },
+    "peerDependencies": {
+        "gatsby": "^2.24.27"
+    },
+    "dependencies": {
+        "@babel/runtime": "7.11.0",
+        "crypto": "^1.0.1",
+        "gatsby-source-filesystem": "^2.3.23",
+        "lodash": "^4.17.19",
+        "node-fetch": "^2.6.0"
+    }
+}
