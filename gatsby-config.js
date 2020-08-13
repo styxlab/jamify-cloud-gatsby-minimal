@@ -50,6 +50,7 @@ module.exports = {
           },
         ],
         target: {
+          host: `https://media.jamify.org`,
           path: `/static`,
         },
         failOnMissing: false,
